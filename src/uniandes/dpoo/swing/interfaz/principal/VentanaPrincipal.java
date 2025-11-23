@@ -86,7 +86,7 @@ public class VentanaPrincipal extends JFrame
      */
     public void mostrarVentanaMapa( )
     {
-        if( ventanaMapa == null) {
+        if( ventanaMapa == null || !ventanaMapa.isVisible( )) { // agrego esta linea dado que despues de agregar un restaurante no se puede volver a visualizar el mapa, nop se si sea solo en mi comp pero me pasa
             ventanaMapa = new VentanaMapa( this, mundo.getRestaurantes( true ) );
             ventanaMapa.setVisible( true );
         }
