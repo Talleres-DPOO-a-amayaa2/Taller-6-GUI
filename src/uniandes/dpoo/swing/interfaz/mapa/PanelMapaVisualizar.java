@@ -45,8 +45,8 @@ public class PanelMapaVisualizar extends JPanel
             for( Restaurante r : restaurantes ){
                 int x = r.getX( );
                 int y = r.getY( );
-                g2d.drawString( r.getNombre( ), x, y);
-                g2d.fillOval( x, y - 5, 10, 10 );
+                g2d.drawString( r.getNombre( ), x + 10, y + 4);
+                g2d.fillOval( x- 3, y - 3, 7, 7);
             }
         }
     }
