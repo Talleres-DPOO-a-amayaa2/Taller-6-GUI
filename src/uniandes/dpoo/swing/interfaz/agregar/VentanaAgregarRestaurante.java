@@ -45,7 +45,7 @@ public class VentanaAgregarRestaurante extends JFrame
         JPanel panelSur = new JPanel( new BorderLayout( ) );
 
         panelDetalles = new PanelEditarRestaurante( );
-        PanelBotonesAgregar panelBotones = new PanelBotonesAgregar( this );
+        panelBotones = new PanelBotonesAgregar( this );
 
         panelSur.add( panelDetalles, BorderLayout.CENTER );
         panelSur.add( panelBotones, BorderLayout.SOUTH );

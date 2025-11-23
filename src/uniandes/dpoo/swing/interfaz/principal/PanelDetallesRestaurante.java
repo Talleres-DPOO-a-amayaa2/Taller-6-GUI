@@ -32,23 +32,37 @@ public class PanelDetallesRestaurante extends JPanel
     {
         // Configura la etiqueta para el nombre
         // TODO completar el constructor
-    	labNombre = new JLabel( " " );
+    	JPanel filaNombre = new JPanel( new FlowLayout( FlowLayout.LEFT ) ); // hace que se vea s ala izquierda del ombre 
+        JLabel labNombreTitulo = new JLabel( "Nombre: " );
+        labNombre = new JLabel( "" );
+        filaNombre.add( labNombreTitulo );
+        filaNombre.add( labNombre );
 
         // Configura la etiqueta para la calificación
         // TODO completar el constructor
-    	labCalificacion = new JLabel( );
+        JPanel filaCalificacion = new JPanel( new FlowLayout( FlowLayout.LEFT ) );
+        JLabel labCalificacionTitulo = new JLabel( "Calificación: " );
+        labCalificacion = new JLabel( );
+        filaCalificacion.add( labCalificacionTitulo );
+        filaCalificacion.add( labCalificacion );
+
 
         // Configura el checkbox para indicar si ya se visitaó o no el restaurante
         // TODO completar el constructor
-    	chkVisitado = new JCheckBox( "Visitado" );
-        chkVisitado.setEnabled( false ); 
+        JPanel filaVisitado = new JPanel( new FlowLayout( FlowLayout.LEFT ) );
+        JLabel labVisitadoTitulo = new JLabel( "Visitado: " );
+        chkVisitado = new JCheckBox( );
+        chkVisitado.setEnabled( false );
+        filaVisitado.add( labVisitadoTitulo );
+        filaVisitado.add( chkVisitado );
+
 
         // Organiza los elementos en la venta
         // TODO completar el constructor
         this.setLayout( new GridLayout( 3, 1 ) );
-        this.add( labNombre );
-        this.add( labCalificacion );
-        this.add( chkVisitado );
+        this.add( filaNombre );
+        this.add( filaCalificacion );
+        this.add( filaVisitado );
     }
 
     /**

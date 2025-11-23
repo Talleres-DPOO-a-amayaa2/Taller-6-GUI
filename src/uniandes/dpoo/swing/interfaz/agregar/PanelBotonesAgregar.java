@@ -36,17 +36,18 @@ public class PanelBotonesAgregar extends JPanel implements ActionListener
 
         // Agrega el botón para crear el restaurante
         // TODO completar
-        JButton btnCrear = new JButton( "Crear restaurante" );
-        btnCrear.setActionCommand( CREAR );
-        btnCrear.addActionListener( this );
-        add( btnCrear );
+        butNuevo  = new JButton("Crear nuevo restaurante");
+        butNuevo.setActionCommand(CREAR);
+        butNuevo.addActionListener(this);
+        add(butNuevo);
 
         // Agrga el boton para cerrar la ventana
         // TODO completar
-        JButton btnCerrar = new JButton( "Cerrar" );
-        btnCerrar.setActionCommand( CERRAR );
-        btnCerrar.addActionListener( this );
-        add( btnCerrar );
+        butCerrar  =new JButton("Cerrar ventana");
+        butCerrar.setActionCommand(CERRAR);
+        butCerrar.addActionListener(this);
+        add(butCerrar);
+
     }
 
     @Override

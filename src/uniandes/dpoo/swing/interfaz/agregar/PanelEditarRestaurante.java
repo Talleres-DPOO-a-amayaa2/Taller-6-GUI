@@ -28,17 +28,17 @@ public class PanelEditarRestaurante extends JPanel
 
     public PanelEditarRestaurante( )
     {
-    	setLayout( new GridLayout( 3, 2 ) );
+    	setLayout( new GridLayout( 3, 2) );
         // Crea el campo para el nombre con una etiqueta al frente
         // TODO completar
-    	JLabel labNombre = new JLabel( "Nombre:" );
+    	JLabel labNombre = new JLabel( "Nombre restaurante:" );
         txtNombre = new JTextField( 20 );
         this.add( labNombre );
         this.add( txtNombre );
 
         // Crea el selector para la calificación con una etiqueta al frente
         // TODO completar
-        JLabel labCalificacion = new JLabel( "Calificación:" );
+        JLabel labCalificacion = new JLabel( "Calificación de 1 a 5:" );
         cbbCalificacion = new JComboBox<String>( );
         cbbCalificacion.addItem( "1" );
         cbbCalificacion.addItem( "2" );
