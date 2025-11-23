@@ -41,11 +41,12 @@ public class PanelMapaVisualizar extends JPanel
 
      // TODO completar y hacer que se vean los nombres de todos los restaurantes en el mapa
         if( restaurantes != null ){
+        	g2d.setColor(Color.RED);
             for( Restaurante r : restaurantes ){
                 int x = r.getX( );
                 int y = r.getY( );
-                g2d.drawString( r.getNombre( ), x, y );
-                g2d.fillOval( x - 5, y - 5, 10, 10 );
+                g2d.drawString( r.getNombre( ), x, y);
+                g2d.fillOval( x, y - 5, 10, 10 );
             }
         }
     }
