@@ -17,27 +17,22 @@ public class VentanaPrincipal extends JFrame
      * Es una referencia al diario en el que se registran las visitas a los restaurantes
      */
     private Diario mundo;
-
     /**
      * El panel con los botones para crear un nuevo restaurante o para ver el mapa de restaurantes
      */
     private PanelBotones pBotones;
-
     /**
      * El panel donde se muestran los detalles del restaurante seleccionado actualmente
      */
     private PanelDetallesRestaurante pDetalles;
-
     /**
      * El panel donde se muestra la lista de restaurantes
      */
     private PanelLista pLista;
-
     /**
      * Una referencia a la ventana del mapa, si ya se abrió alguna vez
      */
     private VentanaMapa ventanaMapa;
-
     /**
      * Una referencia a la ventana donde se agregan restaurantes, si ya se abrió alguna vez
      */
